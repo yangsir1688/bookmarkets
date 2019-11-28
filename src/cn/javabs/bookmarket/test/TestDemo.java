@@ -1,4 +1,4 @@
-package cn.javabs.bookmarket.exception.test;
+package cn.javabs.bookmarket.test;
 
 public class TestDemo {
     public static void main(String[] args) {
