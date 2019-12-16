@@ -116,4 +116,21 @@ public class BookDaoImpl implements BookDao {
             throw new BookDaoImplException(e);
         }
     }
+
+    /**
+     *  查询总条数
+     * @return
+     */
+    @Override
+    public int getBookNumber() {
+        Object obj = null;
+        try {
+            obj = qr.query("select count(*) from book", new ScalarHandler(1));
+            Long num = (Long) obj;
+            int number = num.intValue();
+            return number;
+        }catch (SQLException e) {
+            throw new BookDaoImplException(e);
+        }
+    }
 }

@@ -11,6 +11,8 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+<a href="${pageContext.request.contextPath}/categoryServlet?method=toAddCategory">添加分类</a>
+<a href="${pageContext.request.contextPath}/bookServlet?method=toAddBook">添加图书</a>
+<a href="${pageContext.request.contextPath}/bookServlet?method=bookList&pageNum=1">点击查询所有图书</a>
   </body>
 </html>

@@ -3,6 +3,7 @@ package cn.javabs.bookmarket.util;
 import java.util.List;
 
 public class Page {
+    // 存放分页记录内容的集合
     private List record;
     //每页显示几条
     private int pageSize = 3;

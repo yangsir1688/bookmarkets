@@ -30,4 +30,6 @@ public interface BookDao {
      * @return
      */
     List<Book> findPageBooks(int startIndex ,int pageSize , int categoryId);
+
+    int getBookNumber();
 }

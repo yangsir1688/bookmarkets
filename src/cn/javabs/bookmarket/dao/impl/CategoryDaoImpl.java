@@ -7,6 +7,7 @@ import cn.javabs.bookmarket.util.DruidUtil;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.junit.Test;
 
 import javax.xml.ws.handler.Handler;
 import java.sql.SQLException;
@@ -40,7 +41,7 @@ public class CategoryDaoImpl implements CategoryDao {
     @Override
     public int updateCategory(Category category) {
         try {
-            int rows = qr.update("uodate category set name = ?,description = ? where id = ?",
+            int rows = qr.update("update category set name = ?,description = ? where id = ?",
                     category.getName(), category.getDescription(),category.getId());
             return rows;
         } catch (SQLException e) {
